@@ -12,6 +12,8 @@
 		07E61F972194259800AC5EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E61F952194259800AC5EED /* Main.storyboard */; };
 		07E61F992194259900AC5EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E61F982194259900AC5EED /* Assets.xcassets */; };
 		07E61F9C2194259900AC5EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E61F9A2194259900AC5EED /* LaunchScreen.storyboard */; };
+		07E61FA42194267F00AC5EED /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E61FA32194267F00AC5EED /* Download.swift */; };
+		07E61FA6219426A300AC5EED /* DownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E61FA5219426A300AC5EED /* DownloadDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		07E61F982194259900AC5EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E61F9B2194259900AC5EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E61F9D2194259900AC5EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E61FA32194267F00AC5EED /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		07E61FA5219426A300AC5EED /* DownloadDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				07E61F982194259900AC5EED /* Assets.xcassets */,
 				07E61F9A2194259900AC5EED /* LaunchScreen.storyboard */,
 				07E61F9D2194259900AC5EED /* Info.plist */,
+				07E61FA32194267F00AC5EED /* Download.swift */,
+				07E61FA5219426A300AC5EED /* DownloadDelegate.swift */,
 			);
 			path = DelegateDemo;
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E61FA6219426A300AC5EED /* DownloadDelegate.swift in Sources */,
+				07E61FA42194267F00AC5EED /* Download.swift in Sources */,
 				07E61F942194259800AC5EED /* ViewController.swift in Sources */,
 				07E61F922194259800AC5EED /* AppDelegate.swift in Sources */,
 			);

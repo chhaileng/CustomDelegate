@@ -9,12 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var download: Download?
 
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    @IBAction func downloadTap(_ sender: UIButton) {
+        
+        statusLabel.text = "Status: Downloading..."
+        
+        // start download
+        download?.startDownload()
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        download = Download()
+        download?.delegate = self
     }
+}
 
-
+extension ViewController: DownloadDelegate {
+    func didFinishDownload(message: String) {
+        statusLabel.text = "Status: \(message)"
+    }
 }
 
